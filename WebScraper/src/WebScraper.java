@@ -47,8 +47,10 @@ public class WebScraper implements Runnable {
                     }
                 }
             } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (Exception | Error e) {
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

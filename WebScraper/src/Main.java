@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ExecutorService pool = Executors.newFixedThreadPool(1500);
+        ExecutorService pool = Executors.newFixedThreadPool(20);
         linksToVisit.add("https://www.touro.edu/");//start with touro.edu
 
         while (!linksToVisit.isEmpty() && emails.size() <= EMAIL_MAX_COUNT) {
