@@ -96,9 +96,9 @@ public class Main {
     }
 
     public static void dbUpload(String email) {
-        String url = "database-1.cbjmpwcdjfmq.us-east-1.rds.amazonaws.com:1433"; // should pull from AWS Secrets Manager, environment variable, Properties class (key, value pairs)
+        String url = "insert database url here"; // should pull from AWS Secrets Manager, environment variable, Properties class (key, value pairs)
         String connectionUrl =
-                String.format("jdbc:sqlserver://%s;databaseName=jacobi;user=admin;password=mco368Touro", url);
+                String.format("jdbc:sqlserver://%s;databaseName=somename;user=someuser;password=somepassword", url);//change the appropriate properties
 
         try (Connection con = DriverManager.getConnection(connectionUrl); // Autoclosable
              Statement stmt = con.createStatement()) {
