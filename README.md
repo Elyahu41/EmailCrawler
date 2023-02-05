@@ -1,2 +1,2 @@
 # EmailCrawler
-This was a class project. This program is able to collect and upload at least 10,000 emails from the web.
+This program is able to collect from the web at least 10,000 emails given any website. The default website given is Touro.edu. This application collects all emails and links on a page and stores them in a list. When it is finished with a given page it removes it from the list and moves onto the next link it picked up on the webpage. Then is scrapes the emails and links from that webpage. And so on and so forth until it collects 10,000 emails.
